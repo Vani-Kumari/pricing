@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pricing-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap:2rem;
+            
+        }
+        .pricing-plan{
+            flex:1;
+            max-width:400px;
+            padding:20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            text-align:center;
+            
+        }
+        .plan-title{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .plan-price{
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+        .plan-features{
+            list-style:none;
+            list-style-type: none;
+            padding: 0;
+            margin:0;
+
+        }
+        .plan-features li{
+        
+            margin-bottom: 20px;
+        }
+        .plan-button{
+            padding: 10px;
+            background-color: orangered;
+            color:#fff;
+            border-radius: 5px;
+            border: none;
+        }
+        @media(max-width: 1250px){
+            .pricing-container{
+                flex-direction: column;
+                height:100%;
+            }
+        }
+        body{
+            font-family: 'sano', sans-serif;
+            background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/10/free-website-background-01.jpg);
+        }
+        
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-plan">
+            <div class="plan-title">Basic</div>
+            <div class="plan-price">$9.99/month</div>
+           <ul class="plan features">
+            <li> &#128683 10GB storage</li>
+            <li> &#9989 1 user</li>
+            <li> &#9989 support</li>
+           </ul>
+           <button class="plan-button">Sign Up</button>
+
+        </div>
+        <div class="pricing-plan">
+            <div class="plan-title">Standard</div>
+            <div class="plan-price">$19.99/month</div>
+           <ul class="plan features">
+            <li>  &#9989 50GB storage</li>
+            <li> &#9989 5 user</li>
+            <li> &#9989 Phone and email support</li>
+           </ul>
+           <button class="plan-button">Sign Up</button>
+
+        </div>
+        <div class="pricing-plan">
+            <div class="plan-title">Premium</div>
+            <div class="plan-price">$49.99/month</div>
+           <ul class="plan features">
+            <li>  &#9989 100GB storage</li>
+            <li> &#9989 10 user</li>
+            <li> &#9989 24/7 support </li>
+           </ul>
+           <button class="plan-button">Sign Up</button>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
